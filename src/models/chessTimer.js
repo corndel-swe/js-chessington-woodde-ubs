@@ -10,6 +10,8 @@ export class ChessTimer {
      */
     constructor(/* TODO: Day 1, Exercise 1 */) {
         // TODO: Day 1, Exercise 1
+        this.currentPlayer = Player.WHITE;
+
         this.whiteTimeRemaining = 300 // Time in seconds
         this.blackTimeRemaining = 300
     }
@@ -21,7 +23,8 @@ export class ChessTimer {
     start() {
         this.currentPlayer = Player.WHITE;
 
-        // This starts a timer that decrements the time remaining for the current player every millisecond.
+        // This starts a timer that decrements the time remaining 
+        // for the current player every millisecond.
         this.timer = setInterval(() => {
             if (this.currentPlayer === Player.WHITE) {
                 this.whiteTimeRemaining -= 0.001;
@@ -55,7 +58,13 @@ export class ChessTimer {
     // TODO: Day 1, Exercise 2
 
     /**
-     * Get the time remaining
+     * Get the time remaining for white
+     * @returns {number} the time in seconds
+     */
+    // TODO: Day 1, Exercise 3
+
+    /**
+     * Get the time remaining for black
      * @returns {number} the time in seconds
      */
     // TODO: Day 1, Exercise 3
