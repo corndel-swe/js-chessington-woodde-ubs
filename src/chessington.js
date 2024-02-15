@@ -1,13 +1,13 @@
-import Board from "../../engine/board";
-import GameSettings from "../../engine/gameSettings";
-import Bishop from "../../engine/pieces/bishop";
-import King from "../../engine/pieces/king";
-import Knight from "../../engine/pieces/knight";
-import Pawn from "../../engine/pieces/pawn";
-import Queen from "../../engine/pieces/queen";
-import Rook from "../../engine/pieces/rook";
-import Player from "../../engine/player";
-import Square from "../../engine/square";
+import Board from "./models/board.js";
+import GameSettings from "./gameSettings.js";
+import Bishop from "./models/pieces/bishop.js";
+import King from "./models/pieces/king.js";
+import Knight from "./models/pieces/knight.js";
+import Pawn from "./models/pieces/pawn.js";
+import Queen from "./models/pieces/queen.js";
+import Rook from "./models/pieces/rook.js";
+import Player from "./models/player.js";
+import Square from "./models/square.js";
 
 let boardUI;
 let board;
@@ -140,14 +140,18 @@ function boardInStartingPosition() {
     return board;
 }
 
-export function createChessBoard() {
+function createChessBoard() {
     board = boardInStartingPosition();
-    boardUI = ChessBoard("chess-board", {
+    boardUI = window.ChessBoard("chess-board", {
         showNotation: false,
         draggable: true,
         position: boardToPositionObject(board),
-        onDragStart: onDragStart,
-        onDrop: onDrop,
+        onDragStart,
+        onDrop,
     });
     updateStatus();
 }
+
+window.addEventListener("DOMContentLoaded", (event) => {
+    createChessBoard()
+})

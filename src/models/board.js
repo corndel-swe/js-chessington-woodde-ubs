@@ -1,5 +1,5 @@
 import Player from "./player";
-import GameSettings from "./gameSettings";
+import GameSettings from "../gameSettings";
 import Square from "./square";
 
 export default class Board {

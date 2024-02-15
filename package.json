@@ -1,40 +1,17 @@
 {
-  "name": "chessington",
-  "version": "1.0.0",
-  "description": "",
-  "main": "src/index.js",
+  "name": "swe-js-chessington",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "clean": "del-cli dist/**/* logs/*",
-    "bundle": "SET NODE_ENV=production && webpack",
-    "build": "npm run clean && npm run bundle",
-    "start": "SET NODE_ENV=production && webpack serve",
-    "test": "SET NODE_ENV=test && mocha \"./tests/**/*.spec.js\""
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
-    "@babel/cli": "^7.20.7",
-    "@babel/core": "^7.20.12",
-    "@babel/plugin-transform-modules-commonjs": "^7.20.11",
-    "@babel/plugin-transform-runtime": "^7.19.6",
-    "@babel/polyfill": "^7.12.1",
-    "@babel/preset-env": "^7.20.2",
-    "@babel/register": "^7.18.9",
-    "babel-cli": "^6.26.0",
-    "babel-loader": "^9.1.2",
-    "babel-preset-env": "^1.6.0",
-    "chai": "^4.1.2",
-    "copy-webpack-plugin": "^11.0.0",
-    "core-js": "^3.27.1",
-    "del-cli": "^5.0.0",
-    "esm": "^3.2.25",
-    "mocha": "^10.2.0",
-    "webpack": "^5.75.0",
-    "webpack-cli": "^5.0.1",
-    "webpack-dev-server": "^4.11.1"
+    "vite": "^5.1.0"
   },
   "dependencies": {
-    "@babel/runtime": "^7.20.7",
-    "express": "^4.16.1"
+    "cm-chessboard": "^8.5.0"
   }
 }

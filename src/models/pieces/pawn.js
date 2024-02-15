@@ -1,10 +1,9 @@
-import Player from "../player";
 import Square from "../square";
-import Piece from "./piece";
+import Player from "../player";
 
-export default class Pawn extends Piece {
+export default class Pawn {
     constructor(player) {
-        super(player);
+        this.player = player;
     }
 
     getAvailableMoves(board) {
@@ -14,5 +13,10 @@ export default class Pawn extends Piece {
         } else {
             return [Square.at(location.row - 1, location.col)];
         }
+    }
+
+    moveTo(board, newSquare) {
+        const currentSquare = board.findPiece(this);
+        board.movePiece(currentSquare, newSquare);
     }
 }
