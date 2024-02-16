@@ -1,14 +1,11 @@
-export default class Bishop {
+import Piece from './piece'
+
+export default class Bishop extends Piece {
     constructor(player) {
-        this.player = player
+        super(player)
     }
 
     getAvailableMoves(board) {
         return []
-    }
-
-    moveTo(board, newSquare) {
-        const currentSquare = board.findPiece(this)
-        board.movePiece(currentSquare, newSquare)
     }
 }
