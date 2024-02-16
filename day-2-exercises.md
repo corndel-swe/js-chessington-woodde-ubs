@@ -4,7 +4,9 @@
 
 You may have seen or used the very useful `Math` utility class. This has lots of useful static methods and properties.
 
-Let's make our own set of utility methods and properties, called `Maths`, localised for UK spelling. A skeleton file and class is provided in `src/models/maths.js`
+Read the docs about [static methods and properties]().
+
+Let's make our own set of utility methods and properties, called `Maths`. A skeleton file and class is provided in `src/models/maths.js`
 
 To run the tests for this exercise, run `npm run test:d2e1` in your terminal.
 
@@ -15,6 +17,7 @@ Let's implement the following:
 
 ## Inheritance
 
+On the theme of maths and geometry, 
 
 
 ## Overriding
