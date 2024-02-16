@@ -1,5 +1,3 @@
-import Knight from '../../../src/engine/pieces/knight';
+import Knight from '../../../src/engine/pieces/knight'
 
-describe('Knight', () => {
-
-});
+describe('Knight', () => {})

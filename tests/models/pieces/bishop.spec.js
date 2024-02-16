@@ -1,5 +1,3 @@
-import Bishop from '../../../src/engine/pieces/bishop';
+import Bishop from '../../../src/engine/pieces/bishop'
 
-describe('Bishop', () => {
-
-});
+describe('Bishop', () => {})

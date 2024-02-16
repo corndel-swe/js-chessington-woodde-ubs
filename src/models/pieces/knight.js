@@ -1,14 +1,14 @@
 export default class Knight {
     constructor(player) {
-        this.player = player;
+        this.player = player
     }
 
     getAvailableMoves(board) {
-        return [];
+        return []
     }
 
     moveTo(board, newSquare) {
-        const currentSquare = board.findPiece(this);
-        board.movePiece(currentSquare, newSquare);
+        const currentSquare = board.findPiece(this)
+        board.movePiece(currentSquare, newSquare)
     }
 }

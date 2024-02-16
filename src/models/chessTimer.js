@@ -1,4 +1,4 @@
-import Player from "./player"
+import Player from './player'
 
 /**
  * Class representing a chess timer
@@ -10,51 +10,46 @@ export class ChessTimer {
      */
     constructor(/* TODO: Day 1, Exercise 1 */) {
         // TODO: Day 1, Exercise 1
-        this.currentPlayer = Player.WHITE;
+        this.currentPlayer = Player.WHITE
 
         this.whiteTimeRemaining = 300 // Time in seconds
         this.blackTimeRemaining = 300
     }
 
-
     /**
-     * Starts the timer for white 
+     * Starts the timer for white
      */
     start() {
-        this.currentPlayer = Player.WHITE;
+        this.currentPlayer = Player.WHITE
 
-        // This starts a timer that decrements the time remaining 
+        // This starts a timer that decrements the time remaining
         // for the current player every millisecond.
         this.timer = setInterval(() => {
             if (this.currentPlayer === Player.WHITE) {
-                this.whiteTimeRemaining -= 0.001;
+                this.whiteTimeRemaining -= 0.001
             } else {
-                this.blackTimeRemaining -= 0.001;
+                this.blackTimeRemaining -= 0.001
             }
-        }, 1);
+        }, 1)
     }
 
     /**
      * Stops the timer altogether
      */
     stop() {
-        clearInterval(this.timer);
+        clearInterval(this.timer)
     }
 
     /**
      * Toggles the timer between white and black
      */
-    toggle() {
-        
-    }
+    toggle() {}
     // TODO: Day 1, Exercise 2
 
     /**
      * Reset the timer
      */
-    reset() {
-
-    }
+    reset() {}
     // TODO: Day 1, Exercise 2
 
     /**
@@ -68,5 +63,4 @@ export class ChessTimer {
      * @returns {number} the time in seconds
      */
     // TODO: Day 1, Exercise 3
-
 }

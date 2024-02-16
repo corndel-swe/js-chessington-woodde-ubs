@@ -1,6 +1,6 @@
 export default class Rook {
     constructor(player) {
-        this.player = player;
+        this.player = player
     }
 
     getAvailableMoves(board) {
@@ -8,7 +8,7 @@ export default class Rook {
     }
 
     moveTo(board, newSquare) {
-        const currentSquare = board.findPiece(this);
-        board.movePiece(currentSquare, newSquare);
+        const currentSquare = board.findPiece(this)
+        board.movePiece(currentSquare, newSquare)
     }
 }

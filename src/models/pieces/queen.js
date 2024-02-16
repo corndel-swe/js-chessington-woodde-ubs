@@ -1,6 +1,6 @@
 export default class Queen {
     constructor(player) {
-        this.player = player;
+        this.player = player
     }
 
     getAvailableMoves(board) {
@@ -8,7 +8,7 @@ export default class Queen {
     }
 
     moveTo(board, newSquare) {
-        const currentSquare = board.findPiece(this);
-        board.movePiece(currentSquare, newSquare);
+        const currentSquare = board.findPiece(this)
+        board.movePiece(currentSquare, newSquare)
     }
 }

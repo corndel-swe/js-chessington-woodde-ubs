@@ -1,5 +1,3 @@
-import Queen from '../../../src/engine/pieces/queen';
+import Queen from '../../../src/engine/pieces/queen'
 
-describe('Queen', () => {
-
-});
+describe('Queen', () => {})

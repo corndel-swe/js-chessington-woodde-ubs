@@ -1,5 +1,3 @@
-import Rook from '../../../src/engine/pieces/rook';
+import Rook from '../../../src/engine/pieces/rook'
 
-describe('Rook', () => {
-
-});
+describe('Rook', () => {})
