@@ -17,7 +17,10 @@ Let's implement the following:
 
 ## Inheritance
 
-On the theme of maths and geometry, 
+Speaking of maths and geometry, let's use shapes and polygons as a nice application of inheritance.
+
+First, read the docs on [Inheritance]().
+
 
 
 ## Overriding
