@@ -7,19 +7,19 @@ export class Rectangle {
         this.#height = height;
     }
 
-    getArea() {
+    area() {
         return this.#width * this.#height;
     }
 
-    getPerimeter() {
+    perimeter() {
         return 2 * (this.#width + this.#height);
     }
 
-    getWidth() {
+    width() {
         return this.#width;
     }
 
-    getHeight() {
+    height() {
         return this.#height;
     }
 }
@@ -29,22 +29,23 @@ export class Square {
     #side;
 
     constructor(side) {
+        super(side, side);
         this.#side = side; 
     }
 
-    getArea() {
+    area() {
         return this.#side * this.#side;
     }
 
-    getPerimeter() {
+    perimeter() {
         return 4 * this.#side;
     }
 
-    getWidth() {
+    width() {
         return this.#side;
     }
 
-    getHeight() {
+    height() {
         return this.#side;
     }
 }

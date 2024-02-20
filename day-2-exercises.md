@@ -29,14 +29,14 @@ It's good to have a safeguard to make sure we're not breaking any functionality.
     - To do this, we need to use the `extends` keyword in the class definition. 
     - We also need to call `super` in the constructor of `Square` to call the constructor of `Rectangle` and set the `width` and `height` properties.
 2. Remove any redundant code from the `Square` class
-    - Do we need `#side` any more if we're using `#width` and `#height`?
     - Are there any functions we can remove from `Square` that are already defined in `Rectangle`?
+    - Do we need `#side` any more if we're using `#width` and `#height`?
 
 ## Method overriding
 
 Sometimes, it's not as easy to figure out _one_ way to do something that works for every subclass. Finding the area for a square and a rectangle may be similar enough, but what about a triangle? Or a circle?
 
-We have another set of shape classes in `exercises/shapes.js`, and a base class `Shape` that has placeholder methods `getArea` and `getPerimeter`.
+We have another set of shape classes in `exercises/shapes.js`, and a base class `Shape` that has placeholder methods `area` and `perimeter`.
 
 Read the documentation on [Method overriding]()
 

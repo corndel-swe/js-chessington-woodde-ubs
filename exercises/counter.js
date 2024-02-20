@@ -1,25 +1,25 @@
 class Counter {
-    count;
+    #count;
 
     constructor() {
-        count = 0;
+        this.#count = 0;
     }
 
     increment() {
-        count++;
+        this.#count++;
     }
 
     reset() {
-        count = 0;
+        this.#count = 0;
     }
 
     getCount() {
-        return count;
+        return this.#count;
     }
 }
 
 // Replace `null` with an _instance_ of your counter
-const counterInstance = null 
+const counterInstance = new Counter();
 
 // Please don't change the lines below!
 export {

@@ -1,9 +1,9 @@
 export class Shape {
-    getArea() {
+    area() {
         throw new Error('This method should be overwritten');
     }
 
-    getPerimeter() {
+    perimeter() {
         throw new Error('This method should be overwritten');
     }
 }
@@ -20,24 +20,24 @@ export class Rectangle {
         this.#height = height;
     }
 
-    getArea() {
+    area() {
         return this.#width * this.#height;
     }
 
-    getPerimeter() {
+    perimeter() {
         return 2 * (this.#width + this.#height);
     }
 
-    getWidth() {
+    width() {
         return this.#width;
     }
 
-    getHeight() {
+    height() {
         return this.#height;
     }
 }
 
-export class Triangle {
+export class RightTriangle {
     #base;
     #height;
 
@@ -46,15 +46,15 @@ export class Triangle {
         this.#height = height;
     }
 
-    getBase() {
+    base() {
         return this.#base;
     }
 
-    getHeight() {
+    height() {
         return this.#height;
     }
 
-    getHypotenuse() {
+    hypotenuse() {
         return Math.sqrt(this.#base ** 2 + this.#height ** 2);
     }
 }
@@ -66,7 +66,7 @@ export class Circle {
         this.#radius = radius;
     }
 
-    getRadius() {
+    radius() {
         return this.#radius;
     }
 }
