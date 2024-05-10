@@ -23,7 +23,7 @@ describe("Rectangle", () => {
 
 describe("RightTriangle", () => {
     it("should be a subclass of Shape", () => {
-        assert(RightTriangle.prototype instanceof Shape, "Triangle is not a subclass of Shape");
+        assert(RightTriangle.prototype instanceof Shape, "RightTriangle is not a subclass of Shape");
     })
 
     describe("area", () => {

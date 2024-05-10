@@ -1,3 +1,3 @@
-import Bishop from '../../../src/engine/pieces/bishop'
+import Bishop from '../../../src/models/pieces/bishop.js'
 
 describe('Bishop', () => {})

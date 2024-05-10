@@ -1,3 +1,3 @@
-import Rook from '../../../src/engine/pieces/rook'
+import Rook from '../../../src/models/pieces/rook.js'
 
 describe('Rook', () => {})

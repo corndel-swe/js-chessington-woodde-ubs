@@ -1,11 +1,16 @@
-import Piece from "./piece"
+import Piece from "./piece.js"
 
 export default class Queen extends Piece {
     constructor(player) {
-        super(player)
+        this.player = player
     }
 
     getAvailableMoves(board) {
         return []
+    }
+
+    moveTo(board, newSquare) {
+        const currentSquare = board.findPiece(this)
+        board.movePiece(currentSquare, newSquare)
     }
 }

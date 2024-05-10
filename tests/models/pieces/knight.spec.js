@@ -1,3 +1,3 @@
-import Knight from '../../../src/engine/pieces/knight'
+import Knight from '../../../src/models/pieces/knight.js'
 
 describe('Knight', () => {})

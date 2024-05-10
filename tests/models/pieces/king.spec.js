@@ -1,3 +1,3 @@
-import King from '../../../src/engine/pieces/king'
+import King from '../../../src/models/pieces/king.js'
 
 describe('King', () => {})

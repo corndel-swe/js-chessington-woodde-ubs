@@ -1,11 +1,16 @@
-import Piece from './piece'
+import Piece from './piece.js'
 
-export default class King extends Piece {
+export default class King {
     constructor(player) {
-        super(player)
+        this.player = player
     }
 
     getAvailableMoves(board) {
         return []
+    }
+
+    moveTo(board, newSquare) {
+        const currentSquare = board.findPiece(this)
+        board.movePiece(currentSquare, newSquare)
     }
 }

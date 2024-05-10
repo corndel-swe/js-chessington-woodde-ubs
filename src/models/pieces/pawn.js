@@ -1,6 +1,6 @@
-import Square from '../square'
-import Player from '../player'
-import Piece from './piece'
+import Square from '../square.js'
+import Player from '../player.js'
+import Piece from './piece.js'
 
 export default class Pawn {
     constructor(player) {
