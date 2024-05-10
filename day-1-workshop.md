@@ -17,7 +17,7 @@ the other pieces yet!
 There are tests to check that pieces move correctly. To run these tests, run
 the following command:
 
-```bash npm run test ```
+`bash npm run test `
 
 You may see that there are some failing tests! (Oh, no!)
 
@@ -41,4 +41,3 @@ currently being skipped (they have `xit` instead of `it`).
    make them pass!
 1. When you make them pass, pick another piece and/or another test to un-skip
    and repeat the process again!
-

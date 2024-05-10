@@ -1,72 +1,72 @@
 export class Shape {
-    area() {
-        throw new Error('This method should be overwritten');
-    }
+  area() {
+    throw new Error('This method should be overwritten')
+  }
 
-    perimeter() {
-        throw new Error('This method should be overwritten');
-    }
+  perimeter() {
+    throw new Error('This method should be overwritten')
+  }
 }
 
 // Exercise 3: Make Rectangle, Triangle, and Circle child classes of Shape
 // And override the getArea and getPerimeter methods
 
 export class Rectangle {
-    #width;
-    #height;
+  #width
+  #height
 
-    constructor(width, height) {
-        this.#width = width;
-        this.#height = height;
-    }
+  constructor(width, height) {
+    this.#width = width
+    this.#height = height
+  }
 
-    area() {
-        return this.#width * this.#height;
-    }
+  area() {
+    return this.#width * this.#height
+  }
 
-    perimeter() {
-        return 2 * (this.#width + this.#height);
-    }
+  perimeter() {
+    return 2 * (this.#width + this.#height)
+  }
 
-    width() {
-        return this.#width;
-    }
+  width() {
+    return this.#width
+  }
 
-    height() {
-        return this.#height;
-    }
+  height() {
+    return this.#height
+  }
 }
 
 export class RightTriangle {
-    #base;
-    #height;
+  #base
+  #height
 
-    constructor(base, height) {
-        this.#base = base;
-        this.#height = height;
-    }
+  constructor(base, height) {
+    this.#base = base
+    this.#height = height
+  }
 
-    base() {
-        return this.#base;
-    }
+  base() {
+    return this.#base
+  }
 
-    height() {
-        return this.#height;
-    }
+  height() {
+    return this.#height
+  }
 
-    hypotenuse() {
-        return Math.sqrt(this.#base ** 2 + this.#height ** 2);
-    }
+  hypotenuse() {
+    return Math.sqrt(this.#base ** 2 + this.#height ** 2)
+  }
 }
 
 export class Circle {
-    #radius;
+  #radius
 
-    constructor(radius) {
-        this.#radius = radius;
-    }
+  constructor(radius) {
+    this.#radius = radius
+  }
 
-    radius() {
-        return this.#radius;
-    }
+  radius() {
+    return this.#radius
+  }
 }

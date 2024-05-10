@@ -17,9 +17,8 @@ Let's write a test to make sure that our `Maths.max` function works as
 expected.
 
 1. Write a test that checks that `Maths.max` returns the largest of two
-numbers.
-    - No need to be too fancy with this test. Just put two numbers into
-      `Maths.max` and check that the result is the larger of the two numbers.
+   numbers. - No need to be too fancy with this test. Just put two numbers into
+   `Maths.max` and check that the result is the larger of the two numbers.
 
 2. Run your test with `npm run test:maths` in your terminal.
 
@@ -35,13 +34,10 @@ Assert](https://tech-docs.corndel.com/js/arrange-act-assert.html) documentation
 to get an idea of how to structure your tests.
 
 1. Write a test that checks that the `area` method of `Rectangle` returns the
-correct value.
-    - Arrange: You should create a new `Rectangle` with a known width and
-      height.
-    - Act: Call the `area` method on the `Rectangle`.
-    - Assert: Check that the result is the expected area.
+   correct value. - Arrange: You should create a new `Rectangle` with a known width and
+   height. - Act: Call the `area` method on the `Rectangle`. - Assert: Check that the result is the expected area.
 2. Similarly, write a test that checks that the `perimeter` method of
-`Rectangle` returns the correct value.
+   `Rectangle` returns the correct value.
 
 Run your test with `npm run test:rectangles` in your terminal.
 
@@ -51,7 +47,7 @@ So far, we've been writing tests for code that already exists. This is a good
 way to make sure that our code works as expected.
 
 Another approach is to write the tests _before_ we write the code. This is
-called Test Driven Development (TDD). 
+called Test Driven Development (TDD).
 
 Read the [Test Driven
 Development](https://tech-docs.corndel.com/js/test-driven-development.html)
@@ -67,25 +63,19 @@ sensible code to make the tests pass.
 To keep things simple, we'll only consider positive numbers for now (and zero)
 
 1. Write a test that checks that `Maths.round` returns the same number when
-given a whole number.
-    1. Run your test with `npm run test:maths` in your terminal to make sure it
-    fails.
-    2. Write the minimal sensible code to make the test pass.
-    3. Run your test again to make sure it passes.
+   given a whole number. 1. Run your test with `npm run test:maths` in your terminal to make sure it
+   fails. 2. Write the minimal sensible code to make the test pass. 3. Run your test again to make sure it passes.
 
 2. Write a test that checks that `Maths.round` rounds down when given a number
-with a decimal part less than 0.5.
-    1. Run your test 
-    2. Write code to make your test pass
-    3. Run your test again to make sure it passes.
+   with a decimal part less than 0.5. 1. Run your test 2. Write code to make your test pass 3. Run your test again to make sure it passes.
 
 3. Write the test that `Maths.round` rounds up when given a number with a
-decimal part greater than 0.5. Change the code so that it passes the test if it
-doesn't already pass.
+   decimal part greater than 0.5. Change the code so that it passes the test if it
+   doesn't already pass.
 
 4. Write the test that `Maths.round` rounds _up_ when given a number with a
-decimal part equal to 0.5. Change the code so that it passes the test if it
-doesn't already pass.
+   decimal part equal to 0.5. Change the code so that it passes the test if it
+   doesn't already pass.
 
 ## Extensions
 
@@ -93,6 +83,7 @@ What other methods could you add to the `Maths` class? Use TDD to implement
 them.
 
 A few examples to get you started:
+
 - `Maths.floor` and `Maths.ceil`. These are similar to `Maths.round`, but they
   always round down or up, respectively.
 - `Maths.abs`. This returns the absolute value of a number. That is, it returns

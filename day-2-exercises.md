@@ -39,14 +39,12 @@ correctly by running its tests. To do this, you can `npm run test:d2e2` in your
 terminal after each step.
 
 1. Since a `Square` is a special type of `Rectangle`, let's make `Square`
-_inherit from_ `Rectangle`. 
-    - To do this, we need to use the `extends` keyword in the class definition. 
-    - We also need to call `super` in the constructor of `Square` to call the
-      constructor of `Rectangle` and set the `width` and `height` properties.
+   _inherit from_ `Rectangle`. - To do this, we need to use the `extends` keyword in the class definition. - We also need to call `super` in the constructor of `Square` to call the
+   constructor of `Rectangle` and set the `width` and `height` properties.
 2. Remove any redundant code from the `Square` class
-    - Are there any functions we can remove from `Square` that are already
-      defined in `Rectangle`?
-    - Do we need `#side` any more if we're using `#width` and `#height`?
+   - Are there any functions we can remove from `Square` that are already
+     defined in `Rectangle`?
+   - Do we need `#side` any more if we're using `#width` and `#height`?
 
 ## Method overriding
 
@@ -65,4 +63,4 @@ You can check your answers by running them after each step.
 
 1. Make all the shape classes inherit from `Shape`
 2. Override the `getArea` and `getPerimeter` methods in each subclass to return
-the correct values for that shape
+   the correct values for that shape

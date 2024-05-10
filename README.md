@@ -1,13 +1,13 @@
 # Chessington
 
-1. Run this command to set up the necessary dependencies:  `npm install`
+1. Run this command to set up the necessary dependencies: `npm install`
 1. Run this command to run Chessington on a webserver at `localhost:5173`: `npm
-   run dev`
-1. Run this command to run the tests:  `npm test`
+run dev`
+1. Run this command to run the tests: `npm test`
 
 ## Exercises
 
-The exercises for each day are in separate markdown files. 
+The exercises for each day are in separate markdown files.
 
 - [Day 1 Exercises](./day-1-exercises.md)
 - [Day 2 Exercises](./day-2-exercises.md)

@@ -13,4 +13,3 @@ You should:
 1. Repeat from step 1.
 
 You can "borrow" some tests from the other pieces - Queens move similarly to Bishops and Rooks!
-

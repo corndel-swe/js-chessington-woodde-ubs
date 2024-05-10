@@ -15,4 +15,3 @@ Your task is to do the following:
 It's best to do refactors like this a small chunk at a time. It's hard to keep track of too many changes at once!
 
 Once you have done that, you can continue with yesterday's task of implementing how each piece moves!
-

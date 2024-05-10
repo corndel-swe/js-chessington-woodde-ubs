@@ -33,7 +33,7 @@ describe('Board', () => {
       board.setPiece(square, pawn)
 
       // Assert
-      // board.findPiece(pawn).should.eql(square) 
+      // board.findPiece(pawn).should.eql(square)
       assert.deepEqual(board.findPiece(pawn), square) // Object equivalence: different objects, same data
     })
   })
