@@ -17,7 +17,9 @@ the other pieces yet!
 There are tests to check that pieces move correctly. To run these tests, run
 the following command:
 
-`bash npm run test `
+```bash
+npm run test
+```
 
 You may see that there are some failing tests! (Oh, no!)
 
