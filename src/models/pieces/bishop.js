@@ -1,6 +1,6 @@
 import Piece from './piece.js'
 
-export default class Bishop extends Piece {
+export default class Bishop {
   constructor(player) {
     this.player = player
   }

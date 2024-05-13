@@ -1,6 +1,6 @@
 import Piece from './piece.js'
 
-export default class Rook extends Piece {
+export default class Rook {
   constructor(player) {
     this.player = player
   }
