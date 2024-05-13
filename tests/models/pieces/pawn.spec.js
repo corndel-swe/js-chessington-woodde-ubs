@@ -3,10 +3,13 @@ import Pawn from '../../../src/models/pieces/pawn.js'
 import Board from '../../../src/models/board.js'
 import Player from '../../../src/models/player.js'
 import Square from '../../../src/models/square.js'
+import King from '../../../src/models/pieces/king.js'
 
 describe('Pawn', () => {
   let board
-  beforeEach(() => (board = new Board()))
+  beforeEach(() => {
+    board = new Board()
+  })
 
   describe('white pawns', () => {
     it('can move one square up', () => {
