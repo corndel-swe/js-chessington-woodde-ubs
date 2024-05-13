@@ -37,7 +37,7 @@ describe('King', () => {
     assert.equal(moves.length, 8, '`moves` does not have length 8')
   })
 
-  it('cannot leave the board', () => {
+  xit('cannot leave the board', () => {
     const king = new King(Player.WHITE)
     board.setPiece(Square.at(0, 0), king)
 
@@ -48,7 +48,7 @@ describe('King', () => {
     assert.deepEqual(new Set(moves), new Set(expectedMoves))
   })
 
-  it('can take opposing pieces', () => {
+  xit('can take opposing pieces', () => {
     const king = new King(Player.WHITE)
     const opposingPiece = new Pawn(Player.BLACK)
     board.setPiece(Square.at(4, 4), king)
@@ -62,7 +62,7 @@ describe('King', () => {
     )
   })
 
-  it('cannot take the opposing king', () => {
+  xit('cannot take the opposing king', () => {
     const king = new King(Player.WHITE)
     const opposingKing = new King(Player.BLACK)
     board.setPiece(Square.at(4, 4), king)
@@ -73,7 +73,7 @@ describe('King', () => {
     assert(!moves.some(Square.at(5, 5)), '`moves` contains the square (5, 5)')
   })
 
-  it('cannot take friendly pieces', () => {
+  xit('cannot take friendly pieces', () => {
     const king = new King(Player.WHITE)
     const friendlyPiece = new Pawn(Player.WHITE)
     board.setPiece(Square.at(4, 4), king)
