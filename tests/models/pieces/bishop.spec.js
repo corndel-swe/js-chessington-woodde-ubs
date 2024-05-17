@@ -51,7 +51,10 @@ describe('Bishop', () => {
 
     const moves = bishop.getAvailableMoves(board)
 
-    assert(!moves.some(Square.at(7, 7)), '`moves` contains the square (7, 7)')
+    assert(
+      !moves.some((square) => square.equals(Square.at(7, 7))),
+      '`moves` contains the square (7, 7)'
+    )
   })
 
   xit('cannot move through opposing pieces', () => {
@@ -62,7 +65,10 @@ describe('Bishop', () => {
 
     const moves = bishop.getAvailableMoves(board)
 
-    assert(!moves.some(Square.at(7, 7)), '`moves` contains the square (7, 7)')
+    assert(
+      !moves.some((square) => square.equals(Square.at(7, 7))),
+      '`moves` contains the square (7, 7)'
+    )
   })
 
   xit('can take opposing pieces', () => {
@@ -74,7 +80,7 @@ describe('Bishop', () => {
     const moves = bishop.getAvailableMoves(board)
 
     assert(
-      moves.some(Square.at(6, 6)),
+      moves.some((square) => square.equals(Square.at(6, 6))),
       '`moves` does not contain the square (6, 6)'
     )
   })
@@ -87,7 +93,10 @@ describe('Bishop', () => {
 
     const moves = bishop.getAvailableMoves(board)
 
-    assert(!moves.some(Square.at(6, 6)), '`moves` contains the square (6, 6)')
+    assert(
+      !moves.some((square) => square.equals(Square.at(6, 6))),
+      '`moves` contains the square (6, 6)'
+    )
   })
 
   xit('cannot take friendly pieces', () => {
@@ -98,6 +107,9 @@ describe('Bishop', () => {
 
     const moves = bishop.getAvailableMoves(board)
 
-    assert(!moves.some(Square.at(6, 6)), '`moves` contains the square (6, 6)')
+    assert(
+      !moves.some((square) => square.equals(Square.at(6, 6))),
+      '`moves` contains the square (6, 6)'
+    )
   })
 })

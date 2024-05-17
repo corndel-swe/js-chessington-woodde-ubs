@@ -52,7 +52,7 @@ describe('Knight', () => {
     const moves = knight.getAvailableMoves(board)
 
     assert(
-      moves.some(Square.at(2, 5)),
+      moves.some((square) => square.equals(Square.at(2, 5))),
       '`moves` does not contain the square (2, 5)'
     )
   })
@@ -77,7 +77,7 @@ describe('Knight', () => {
     const moves = knight.getAvailableMoves(board)
 
     assert(
-      moves.some(Square.at(3, 6)),
+      moves.some((square) => square.equals(Square.at(3, 6))),
       '`moves` does not contain the square (3, 6)'
     )
   })
@@ -90,7 +90,10 @@ describe('Knight', () => {
 
     const moves = knight.getAvailableMoves(board)
 
-    assert(!moves.some(Square.at(3, 6)), '`moves` contains the square (3, 6)')
+    assert(
+      !moves.some((square) => square.equals(Square.at(3, 6))),
+      '`moves` contains the square (3, 6)'
+    )
   })
 
   xit('cannot take friendly pieces', () => {
@@ -101,6 +104,9 @@ describe('Knight', () => {
 
     const moves = knight.getAvailableMoves(board)
 
-    assert(!moves.some(Square.at(3, 6)), '`moves` contains the square (3, 6)')
+    assert(
+      !moves.some((square) => square.equals(Square.at(3, 6))),
+      '`moves` contains the square (3, 6)'
+    )
   })
 })

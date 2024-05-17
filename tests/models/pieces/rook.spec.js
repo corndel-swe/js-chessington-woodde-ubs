@@ -54,7 +54,10 @@ describe('Rook', () => {
 
     const moves = rook.getAvailableMoves(board)
 
-    assert(!moves.some(Square.at(4, 7)), '`moves` contains the square (4, 7)')
+    assert(
+      !moves.some((square) => equare.equals(Square.at(4, 7))),
+      '`moves` contains the square (4, 7)'
+    )
   })
 
   xit('cannot move through opposing pieces', () => {
@@ -65,7 +68,10 @@ describe('Rook', () => {
 
     const moves = rook.getAvailableMoves(board)
 
-    assert(!moves.some(Square.at(4, 7)), '`moves` contains the square (4, 7)')
+    assert(
+      !moves.some((square) => square.equals(Square.at(4, 7))),
+      '`moves` contains the square (4, 7)'
+    )
   })
 
   xit('can take opposing pieces', () => {
@@ -76,9 +82,8 @@ describe('Rook', () => {
 
     const moves = rook.getAvailableMoves(board)
 
-    moves.should.deep.include(Square.at(4, 6))
     assert(
-      moves.some(Square.at(4, 6)),
+      moves.some((square) => square.equals(Square.at(4, 6))),
       '`moves` does not contain the square (4, 6)'
     )
   })
@@ -91,7 +96,10 @@ describe('Rook', () => {
 
     const moves = rook.getAvailableMoves(board)
 
-    assert(!moves.some(Square.at(4, 6)), '`moves` contains the square (4, 6)')
+    assert(
+      !moves.some((square) => square.equals(Square.at(4, 6))),
+      '`moves` contains the square (4, 6)'
+    )
   })
 
   xit('cannot take friendly pieces', () => {
@@ -102,6 +110,9 @@ describe('Rook', () => {
 
     const moves = rook.getAvailableMoves(board)
 
-    assert(!moves.some(Square.at(4, 6)), '`moves` contains the square (4, 6)')
+    assert(
+      !moves.some((square) => square.equals(Square.at(4, 6))),
+      '`moves` contains the square (4, 6)'
+    )
   })
 })
