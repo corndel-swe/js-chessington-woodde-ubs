@@ -51,8 +51,8 @@ The exercises for each day are in the `docs` folder:
 
 The workshop for each day can also be found in the `docs` folder:
 
-- [Day 1 Workshop](./day-1-workshop.md)
+- [Day 1 Workshop](./docs/day-1-workshop.md)
 
-- [Day 2 Workshop](./day-2-workshop.md)
+- [Day 2 Workshop](./docs/day-2-workshop.md)
 
-- [Day 3 Workshop](./day-3-workshop.md)
+- [Day 3 Workshop](./docs/day-3-workshop.md)
