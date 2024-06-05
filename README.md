@@ -45,6 +45,10 @@ The exercises for each day are in the `docs` folder:
 
 ## Workshops
 
+> [!NOTE]
+>
+> Be sure to read `CONTRIBUTING.md` before getting started on the workshops.
+
 The workshop for each day can also be found in the `docs` folder:
 
 - [Day 1 Workshop](./day-1-workshop.md)
@@ -52,7 +56,3 @@ The workshop for each day can also be found in the `docs` folder:
 - [Day 2 Workshop](./day-2-workshop.md)
 
 - [Day 3 Workshop](./day-3-workshop.md)
-
-> [!NOTE]
->
-> Be sure to read `CONTRIBUTING.md` before getting started on the workshops.
