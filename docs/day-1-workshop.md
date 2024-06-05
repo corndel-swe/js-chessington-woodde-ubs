@@ -1,5 +1,9 @@
 # Day 1 Workshop
 
+> [!NOTE]
+>
+> Be sure to read `CONTRIBUTING.md` before getting started on the workshops.
+
 Take a look at the `getAvailableMoves` method in the `Pawn` class. This function
 has been partially implemented, so they can take one step forward.
 
@@ -9,7 +13,7 @@ all.
 This workshop is all about getting this method working as much as possible for
 all classes.
 
-> [!NOTE]
+> [!TIP]
 >
 > There are a _lot_ of movement rules in chess. Don't get overwhelmed - the
 > point is to implement what you can in the time allowed and see how far we get.
