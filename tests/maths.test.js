@@ -13,3 +13,28 @@ describe('Maths Class', function () {
     })
 })
 
+
+describe('returns same whole number', function () {
+    const rounded = new Maths()
+    it('should return same number when whole number', function () {
+        const wholeNumber = rounded.round(50)
+        assert.strictEqual(wholeNumber, 50)
+    })
+    it('should round down if under 0.5', function () {
+        const roundDown = rounded.round(5.48)
+        assert.strictEqual(roundDown, 5)
+    })
+    it('should round up if higher than 0.5', function () {
+        const roundUp = rounded.round(1.51)
+        assert.strictEqual(roundUp, 2)
+    })
+
+})
+
+describe('returns same whole number', function () {
+    const absed = new Maths()
+    it('should return absolute value', function () {
+        const absMath = absed.abs(-5)
+        assert.strictEqual(absMath, 5)
+    })
+})

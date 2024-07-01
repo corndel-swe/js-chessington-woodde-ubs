@@ -12,5 +12,12 @@ export class Maths {
         //     return b
         // }
     }
+
+    round(number) {
+        return Math.round(number)
+    }
+    abs(number) {
+        return Math.abs(number)
+    }
 }
 
